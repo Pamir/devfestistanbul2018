@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: 2018-10-28T12:30:44Z
+  name: logging
+  resourceVersion: "500459"
+  selfLink: /api/v1/namespaces/logging
+  uid: 4a083932-daad-11e8-b7c8-42010a8000de
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
