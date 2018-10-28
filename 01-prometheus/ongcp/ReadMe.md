@@ -9,3 +9,5 @@ kubectl apply -f spring-dpl.yaml
 ```
 ![StackDriver Goruntu](pic/Stackdriver.png)
 
+#### References
+[1] https://cloud.google.com/monitoring/kubernetes-engine/prometheus
