@@ -7,5 +7,5 @@ curl -sSO "https://storage.googleapis.com/stackdriver-prometheus-documentation/p
 #Edit _kubernetes_location: [CLUSTER_LOCATION]
 kubectl apply -f spring-dpl.yaml
 ```
-![StackDriver Goruntu](pic/stackdriver.png)
+![StackDriver Goruntu](pic/Stackdriver.png)
 
