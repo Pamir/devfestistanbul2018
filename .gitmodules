@@ -1,0 +1,3 @@
+[submodule "03-logging/onprem/03-logging/onprem/kubernetes-elasticsearch-cluster"]
+	path = 03-logging/onprem/03-logging/onprem/kubernetes-elasticsearch-cluster
+	url = https://github.com/pires/kubernetes-elasticsearch-cluster.git
