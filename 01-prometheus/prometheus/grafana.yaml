@@ -159,7 +159,7 @@ dataSource:
       "basicAuth": false,
       "name": "prometheus",
       "type": "prometheus",
-      "url": "http://kube-prometheus-prometheus:9090"
+      "url": "http://kube-prometheus:9090"
     } 
 
 ## A list of additional configmaps that contain -dashboard.json and/or -datasource.json files
