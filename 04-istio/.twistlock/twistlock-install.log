@@ -1,0 +1,20 @@
+Console address:
+API address: http://35.202.84.217:8081
+Install folder: /Users/pamir/dev/projects/presentations/devfestistanbul2018/04-istio/.twistlock
+Uninstalling Defender Daemon Set
+Deleting old Defender Daemon Set
+daemonset.extensions "twistlock-defender-ds" deleted
+Deleting old Defender service account
+serviceaccount "twistlock-service" deleted
+Deleting old Defender secrets
+secret "twistlock-secrets" deleted
+No resources found.
+Uninstalled Defender Daemon Set successfully
+Console address: twistlock-console
+API address: http://35.202.84.217:8081
+Install folder: /Users/pamir/dev/projects/presentations/devfestistanbul2018/04-istio/.twistlock
+Downloading Twistlock configuration file
+API address: http://35.202.84.217:8081 Install folder: /Users/pamir/dev/projects/presentations/devfestistanbul2018/04-istio/.twistlock Downloading Twistlock configuration file
+Installation failed: hostname --fqdn 2> /dev/null
+Downloading Twistlock configuration file API address: http://35.202.84.217:8081 Install folder: /Users/pamir/dev/projects/presentations/devfestistanbul2018/04-istio/.twistlock Downloading Twistlock configuration file Installation failed: hostname --fqdn 2> /dev/null
+Installation failed: CONSOLE_CN=
