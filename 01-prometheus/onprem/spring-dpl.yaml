@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: prometheus-demo
-    monitoring: device-mapper
+    monitoring: devfest
   name: prometheus-demo
   namespace: pamir
 spec:
@@ -12,14 +12,14 @@ spec:
   selector:
     matchLabels:
       run: prometheus-demo
-      monitoring: device-mapper
+      monitoring: devfest
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         run: prometheus-demo
-        monitoring: device-mapper
+        monitoring: devfest
     spec:
       containers:
       - image: gcr.io/inspired-bus-194216/springboot-prometheus
@@ -33,7 +33,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    monitoring: device-mapper
+    monitoring: devfest
     run: prometheus-demo
   name: prometheus-demo
   namespace: pamir
@@ -44,7 +44,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    monitoring: device-mapper
+    monitoring: devfest
     run: prometheus-demo
   type: ClusterIP
 status:

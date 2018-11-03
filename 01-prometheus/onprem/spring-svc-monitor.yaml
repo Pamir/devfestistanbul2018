@@ -14,7 +14,7 @@ spec:
   jobLabel: spring-demo-app
   namespaceSelector:
     matchNames:
-    - platform
+    - pamir
   selector:
     matchLabels:
-      monitoring: device-mapper 
+      monitoring: devfest 
