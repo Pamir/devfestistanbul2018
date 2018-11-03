@@ -24,7 +24,7 @@ helm update
 cd ../promethues/
 helm repo add coreos https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
 helm install coreos/prometheus-operator --name prometheus-operator --namespace monitoring
-helm install coreos/kube-promethues --name kube-promethues --namespace monitoring -f kube-promethues.yaml
+helm install coreos/kube-prometheus --name kube-prometheus --namespace monitoring -f kube-prometheus.yaml
 helm install coreos/exporter-kubelets --name exporter-kubelets --namespace monitoring -f exporter-kubelets.yaml
 kubectl apply -f kube-prometheus-grafana.yaml
 helm install coreos/grafana --name prometheus-grafana --namespace monitoring -f grafana.yaml
