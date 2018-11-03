@@ -1,0 +1,20 @@
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: jvm-usedbytes-hpa
+  namespace: dev-fest
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1beta1
+    kind: Deployment
+    name: prometheus-demo
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - external:
+      metricName: external.googleapis.com|prometheus|jvm_memory_used_bytes
+      metricSelector:
+        matchLabels:
+          resource.labels.container_name: prometheus-demo
+      targetAverageValue: "200000"
+    type: External 
