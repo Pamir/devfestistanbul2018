@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: prometheus-demo
-    monitoring: device-mapper
+    monitoring: devfest-monitoring
   name: prometheus-demo
   namespace: devfest
 spec:
@@ -12,14 +12,14 @@ spec:
   selector:
     matchLabels:
       run: prometheus-demo
-      monitoring: device-mapper
+      monitoring: devfest-monitoring
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         run: prometheus-demo
-        monitoring: device-mapper
+        monitoring: devfest-monitoring
       annotations:
         prometheus.io/scrape: 'true'
         prometheus.io/path: 'actuator/prometheus'
@@ -37,7 +37,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    monitoring: device-mapper
+    monitoring: devfest-monitoring
     run: prometheus-demo
   name: prometheus-demo
   namespace: devfest
@@ -48,7 +48,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    monitoring: device-mapper
+    monitoring: devfest-monitoring
     run: prometheus-demo
   type: ClusterIP
 status:
